@@ -1,0 +1,86 @@
+/ * Selectors, properties and values ​​*/
+.Example1 {
+ Color: Blue;
+}
+
+/ * The difference between block and built -in stylization */
+.block {
+ BORDER: 1PX Solid Black;
+ Margin: 10px 0;
+}
+.inline {
+ BORDER: 1PX Solid Red;
+}
+
+/ * CSS Reset */
+* {
+ margin: 0;
+ Padding: 0;
+ BOX-SIZing: BORDER-BOX;
+}
+
+/ * CSS variables */
+: root {
+ --Main-color: #3498DB;
+}
+.Variables {
+ Color: Var (-Main-Color);
+}
+
+/ * Built -in, built -in and external CSS */
+.EXTernal {
+ Color: Green;
+}
+
+/ * Systems of the net (Float) */
+.column {
+ Float: Left;
+ Width: 50%;
+}
+
+/ * Icons of web marts and SVG icons */
+.fa-home {
+ Font-Family: "Font Awesome 5 Free"; / * Connect font awesome */
+ Font-weight: 900;
+}
+#Icon-Home {
+ Fill: CurrentColor;
+}
+
+/ * Pseudoles and pseudo -elements */
+.pseudo: hover {
+ Color: Red;
+}
+.BEFORE :: before {
+ Content: "Example:";
+}
+
+/ * Background gradients */
+.Gradient-background {
+ Background: Linear-Gradient (to Right, Red, Blue);
+}
+
+/ * Animations */
+.ANIMATED {
+ Animation: Example 2S Infinite;
+}
+@keyframes Example {
+ from {background-color: red;}
+ to {background-color: yellow;}
+}
+
+/ * Transformations */
+.Transform-2D {
+ Transform: Rotate (45deg);
+}
+.transform-3d {
+ Transform: Rotatex (45deg) Rotatey (45deg);
+}
+
+/ * Vendor prefixes */
+.Vendor-prefix {
+ -Webkit-transition: All 0.5s; / * Chrome, safari */
+ -Moz-TRANSITION: All 0.5S; / * Firefox */
+ -o-transition: all 0.5s; / * Opera */
+ Transition: All 0.5s; / * Standard */
+}
